@@ -11,7 +11,7 @@ RUN npm run build
 
 FROM node:19-alpine AS final
 WORKDIR /app
-COPY --from=builder ./app/dist ./app
+COPY --from=builder ./app/dist ./dist
 COPY ./package.json .
 
 RUN npm install --production
