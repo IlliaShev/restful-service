@@ -30,5 +30,4 @@ env_file:
 You can pull image from DockerHub using following command
 ```bash
 $ docker pull shevchyk/restful-service:latest
-$ 
 ```
