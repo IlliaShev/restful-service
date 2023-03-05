@@ -21,9 +21,14 @@ DB_HOST=localhost
 DB_PORT=27017
 DB_NAME=rest
 ```
-You can also provide config file in docker-compose.yml under the appropriate service
+To provide config file in docker-compose.yml under the appropriate service
 ```
 env_file:
       - .env.dev
 ```
-
+## DockerHub
+You can pull image from DockerHub using following command
+```bash
+$ docker pull shevchyk/restful-service:latest
+$ 
+```

@@ -15,12 +15,12 @@ services:
     build: .
     container_name: rest-service
     ports:
-      - "80:8080"
+      - "8080:80"
     deploy:
       resources:
         limits:
-          cpus: 0.5
-          memory: 512M
+          cpus: "0.5"
+          memory: "512M"
     depends_on:
       - db
     env_file:
